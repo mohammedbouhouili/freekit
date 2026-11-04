@@ -1,0 +1,266 @@
+
+.about-page {
+  min-height: 100vh;
+  background: #f7f9f7;
+  padding: 35px 20px 55px;
+  color: #25382c;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.about-page * {
+  box-sizing: border-box;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-back {
+  border: none;
+  background: transparent;
+  color: #65806c;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.about-back:hover {
+  color: #16a36a;
+}
+
+.about-eyebrow {
+  color: #16a36a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 75px 20px 85px;
+}
+
+.about-hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.15;
+  margin: 18px 0 22px;
+}
+
+.about-hero h1 span {
+  color: #16a36a;
+}
+
+.about-hero p {
+  max-width: 640px;
+  margin: 0 auto 28px;
+  color: #829487;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.about-primary-button,
+.about-cta button {
+  border: none;
+  background: #16a36a;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px 24px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.about-primary-button:hover,
+.about-cta button:hover {
+  background: #108a59;
+}
+
+.about-mission {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e4ebe5;
+  border-radius: 20px;
+  padding: 55px 45px;
+}
+
+.about-mission-icon {
+  width: 58px;
+  height: 58px;
+  background: #eaf8ef;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  margin: 0 auto 22px;
+}
+
+.about-mission h2,
+.about-section-heading h2 {
+  font-size: clamp(26px, 4vw, 35px);
+  letter-spacing: -1px;
+  margin: 12px 0 18px;
+}
+
+.about-mission p {
+  max-width: 720px;
+  margin: 0 auto 16px;
+  color: #829487;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about-features,
+.about-values {
+  padding: 90px 0 20px;
+}
+
+.about-section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.about-section-heading p {
+  color: #829487;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.about-feature-card {
+  background: #fff;
+  border: 1px solid #e4ebe5;
+  border-radius: 16px;
+  padding: 28px;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(20, 70, 35, .06);
+}
+
+.about-feature-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  background: #edf8f0;
+  border-radius: 12px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-feature-card h3 {
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.about-feature-card p {
+  color: #829487;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-value {
+  padding: 25px;
+  border-top: 2px solid #d6e9da;
+}
+
+.about-value span {
+  color: #16a36a;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.about-value h3 {
+  font-size: 19px;
+  margin: 15px 0 10px;
+}
+
+.about-value p {
+  color: #829487;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.about-cta {
+  margin-top: 85px;
+  padding: 65px 25px;
+  background: #eaf8ee;
+  border: 1px solid #d9ecde;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: clamp(25px, 4vw, 35px);
+  margin: 15px 0;
+  letter-spacing: -1px;
+}
+
+.about-cta p {
+  max-width: 550px;
+  margin: 0 auto 25px;
+  color: #718a78;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about-footer {
+  text-align: center;
+  padding: 40px 0 0;
+  color: #a0aea4;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .about-features-grid,
+  .about-values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .about-page {
+    padding: 20px 14px 40px;
+  }
+
+  .about-hero {
+    padding: 50px 0 65px;
+  }
+
+  .about-mission {
+    padding: 35px 22px;
+  }
+
+  .about-features,
+  .about-values {
+    padding-top: 60px;
+  }
+
+  .about-features-grid,
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta {
+    margin-top: 55px;
+    padding: 45px 20px;
+  }
+}

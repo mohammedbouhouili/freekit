@@ -1,0 +1,134 @@
+
+.terms-page {
+  min-height: 100vh;
+  background: #f7f9f7;
+  padding: 35px 20px 55px;
+  color: #25382c;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.terms-page * {
+  box-sizing: border-box;
+}
+
+.terms-container {
+  max-width: 920px;
+  margin: auto;
+}
+
+.terms-back {
+  border: none;
+  background: transparent;
+  color: #65806c;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.terms-back:hover {
+  color: #16a36a;
+}
+
+.terms-card {
+  background: #fff;
+  border: 1px solid #e5ede7;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.terms-header {
+  padding: 45px 45px 35px;
+  background: #f4faf6;
+  border-bottom: 1px solid #e5ede7;
+}
+
+.terms-label {
+  color: #16a36a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.terms-header h1 {
+  font-size: clamp(34px, 5vw, 48px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin: 12px 0;
+}
+
+.terms-header h1 span {
+  color: #16a36a;
+}
+
+.terms-header p {
+  color: #87998b;
+  font-size: 13px;
+  margin: 0;
+}
+
+.terms-content {
+  padding: 40px 45px 55px;
+}
+
+.terms-content h2 {
+  font-size: 19px;
+  font-weight: 750;
+  margin: 32px 0 12px;
+  color: #263d2d;
+}
+
+.terms-content p {
+  color: #66796c;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 0 0 15px;
+}
+
+.terms-email {
+  display: inline-block;
+  background: #eaf8ef;
+  color: #148d59;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #d4eddb;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+}
+
+.terms-email:hover {
+  background: #ddf4e6;
+}
+
+.terms-footer {
+  text-align: center;
+  padding: 30px 10px 0;
+  color: #a0aea4;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .terms-page {
+    padding: 20px 13px 35px;
+  }
+
+  .terms-header {
+    padding: 30px 22px;
+  }
+
+  .terms-content {
+    padding: 25px 22px 40px;
+  }
+
+  .terms-content h2 {
+    font-size: 17px;
+  }
+
+  .terms-content p {
+    font-size: 13px;
+  }
+}

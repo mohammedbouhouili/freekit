@@ -1,0 +1,404 @@
+
+.cc-page {
+  --cc-green: #16a36a;
+  --cc-dark: #192820;
+  --cc-muted: #849187;
+  --cc-border: #e5ebe6;
+
+  min-height: 100vh;
+  padding: 35px 24px 65px;
+  background: #f7f9f7;
+  color: var(--cc-dark);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.cc-page * {
+  box-sizing: border-box;
+}
+
+.cc-page button,
+.cc-page textarea {
+  font: inherit;
+}
+
+.cc-page button {
+  cursor: pointer;
+}
+
+.cc-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.cc-back {
+  border: none;
+  background: transparent;
+  color: #61756a;
+  font-size: 13px;
+  font-weight: 650;
+  padding: 9px 0;
+}
+
+.cc-back:hover {
+  color: var(--cc-green);
+}
+
+.cc-header {
+  text-align: center;
+  padding: 38px 0 40px;
+}
+
+.cc-header-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 17px;
+  background: #e8f7ee;
+  border: 1px solid #d1eddb;
+  border-radius: 16px;
+  color: var(--cc-green);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.cc-eyebrow,
+.cc-step {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  color: var(--cc-green);
+}
+
+.cc-header h1 {
+  font-size: clamp(35px, 5vw, 51px);
+  letter-spacing: -2px;
+  font-weight: 800;
+  margin: 10px 0 12px;
+  line-height: 1.15;
+}
+
+.cc-header h1 span {
+  color: var(--cc-green);
+}
+
+.cc-header p {
+  max-width: 520px;
+  margin: auto;
+  color: var(--cc-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.cc-trust {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 21px;
+  color: #6c8072;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cc-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.cc-card {
+  background: white;
+  border: 1px solid var(--cc-border);
+  border-radius: 17px;
+  padding: 25px;
+  min-width: 0;
+}
+
+.cc-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 23px;
+}
+
+.cc-card h2 {
+  font-size: 20px;
+  font-weight: 780;
+  letter-spacing: -.6px;
+  margin: 9px 0 6px;
+}
+
+.cc-card-heading p,
+.cc-description {
+  color: var(--cc-muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cc-description {
+  margin-bottom: 20px;
+}
+
+.cc-live,
+.cc-ready {
+  background: #e8f8ee;
+  color: #148953;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  padding: 8px 10px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+
+.cc-textarea,
+.cc-output {
+  display: block;
+  width: 100%;
+  min-height: 390px;
+  resize: vertical;
+  border: 1px solid #e3eae5;
+  border-radius: 12px;
+  outline: none;
+  background: #fcfdfc;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #24352a;
+  transition: .2s;
+}
+
+.cc-textarea:focus {
+  border-color: var(--cc-green);
+  background: white;
+  box-shadow: 0 0 0 3px #16a36a12;
+}
+
+.cc-textarea::placeholder,
+.cc-output::placeholder {
+  color: #a3aea6;
+}
+
+.cc-input-footer,
+.cc-output-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 19px;
+}
+
+.cc-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8b9a90;
+  font-size: 11px;
+  flex-wrap: wrap;
+}
+
+.cc-clear {
+  border: 1px solid #e1e8e3;
+  border-radius: 9px;
+  background: white;
+  color: #627369;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cc-clear:hover {
+  background: #f7faf7;
+}
+
+.cc-options {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.cc-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  border: 1px solid #e5ebe6;
+  border-radius: 11px;
+  background: white;
+  padding: 12px;
+  transition: .2s;
+}
+
+.cc-option:hover,
+.cc-option.active {
+  border-color: var(--cc-green);
+  background: #f4fbf6;
+}
+
+.cc-option-icon {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #edf6f0;
+  color: var(--cc-green);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.cc-option-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+
+.cc-option-text strong {
+  font-size: 12px;
+  color: #283b2e;
+}
+
+.cc-option-text small {
+  font-size: 10px;
+  color: #8d9a90;
+  line-height: 1.5;
+}
+
+.cc-radio {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border: 1.5px solid #c8d4cb;
+  border-radius: 50%;
+}
+
+.cc-option.active .cc-radio {
+  border: 4px solid var(--cc-green);
+}
+
+.cc-output-card {
+  margin-top: 22px;
+}
+
+.cc-output {
+  min-height: 220px;
+  background: #f9fbf9;
+}
+
+.cc-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cc-download,
+.cc-copy {
+  border-radius: 9px;
+  padding: 12px 18px;
+  font-size: 12px;
+  font-weight: 750;
+  transition: .2s;
+}
+
+.cc-download {
+  border: 1px solid #e1e8e3;
+  background: white;
+  color: #627369;
+}
+
+.cc-download:hover:not(:disabled) {
+  background: #f7faf7;
+}
+
+.cc-copy {
+  border: 1px solid var(--cc-green);
+  background: var(--cc-green);
+  color: white;
+}
+
+.cc-copy:hover:not(:disabled) {
+  background: #0e8b56;
+}
+
+.cc-page button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.cc-privacy {
+  margin-top: 22px;
+  padding: 16px;
+  background: #f0f8f2;
+  border: 1px solid #e0f0e4;
+  border-radius: 11px;
+  color: #648373;
+  font-size: 12px;
+  text-align: center;
+}
+
+.cc-footer {
+  text-align: center;
+  font-size: 11px;
+  color: #a1aca3;
+  margin-top: 50px;
+}
+
+@media (max-width: 850px) {
+  .cc-workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cc-page {
+    padding: 20px 14px 45px;
+  }
+
+  .cc-header {
+    padding: 30px 0;
+  }
+
+  .cc-header h1 {
+    font-size: 38px;
+  }
+
+  .cc-trust {
+    gap: 10px 15px;
+    font-size: 10px;
+  }
+
+  .cc-card {
+    padding: 18px;
+  }
+
+  .cc-textarea {
+    min-height: 270px;
+    padding: 15px;
+  }
+
+  .cc-output {
+    min-height: 190px;
+    padding: 15px;
+  }
+
+  .cc-actions {
+    width: 100%;
+  }
+
+  .cc-actions button {
+    flex: 1;
+    padding: 12px 9px;
+  }
+
+  .cc-card-heading {
+    flex-wrap: wrap;
+  }
+}
